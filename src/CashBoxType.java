@@ -1,0 +1,4 @@
+enum CashBoxType {
+  STANDARD,
+  FAST
+}
