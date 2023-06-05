@@ -16,15 +16,15 @@ class Client {
       CashBox selected = null;
     };
     if (typeOfCashBoxSelection() == CashBoxType.FAST) {
-      int max = Shop.cashBoxes.get(0).getMaxLength();
-      Shop.cashBoxes.forEach(cashBox -> {
+      int max = Shop.CASH_BOXES.get(0).getMaxLength();
+      Shop.CASH_BOXES.forEach(cashBox -> {
         if (cashBox.getQueue().size() < max) {
           ref.selected = cashBox;
         }
       });
     } else {
-      int max = Shop.fastCashBoxes.get(0).getMaxLength();
-      Shop.fastCashBoxes.forEach(cashBox -> {
+      int max = Shop.FAST_CASH_BOXES.get(0).getMaxLength();
+      Shop.FAST_CASH_BOXES.forEach(cashBox -> {
         if (cashBox.getQueue().size() < max) {
           ref.selected = cashBox;
         }

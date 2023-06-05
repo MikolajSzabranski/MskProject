@@ -13,9 +13,9 @@ class CashBox {
     this.maxLength = maxLength;
     this.timeService = type == CashBoxType.STANDARD ? 30000 : 10000;
     if (type == CashBoxType.STANDARD) {
-      Shop.cashBoxes.add(this);
+      Shop.CASH_BOXES.add(this);
     } else {
-      Shop.fastCashBoxes.add(this);
+      Shop.FAST_CASH_BOXES.add(this);
     }
   }
 
